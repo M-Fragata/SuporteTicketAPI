@@ -1,0 +1,43 @@
+{
+    "[object Object]": [
+        null
+    ],
+    "tickets": [
+        {
+            "id": "84062d66-f92e-4349-9553-920da8f2082e",
+            "equipment": "Computador",
+            "description": "upgrade de memória ram",
+            "user_name": "Matheus Fragata",
+            "status": "open",
+            "created_at": "10/01/2026, 16:59",
+            "updated_at": "10/01/2026, 16:59"
+        },
+        {
+            "id": "c442cbab-205f-4fff-b3dd-7bb429774ae4",
+            "equipment": "Computador",
+            "description": "upgrade de memória ram",
+            "user_name": "Matheus Fragata",
+            "status": "open",
+            "created_at": "10/01/2026, 16:59",
+            "updated_at": "10/01/2026, 16:59"
+        },
+        {
+            "id": "c9e9d17a-7fbb-4d85-a69d-a50152c868d2",
+            "equipment": "Computador",
+            "description": "upgrade de memória ram",
+            "user_name": "Matheus Fragata",
+            "status": "open",
+            "created_at": "10/01/2026, 17:00",
+            "updated_at": "10/01/2026, 17:00"
+        },
+        {
+            "id": "ab8fb4e9-856d-4ff8-9d4e-ba8ee52a68e8",
+            "equipment": "Computador",
+            "description": "upgrade de memória ram",
+            "user_name": "Matheus Fragata",
+            "status": "open",
+            "created_at": "10/01/2026, 17:06",
+            "updated_at": "10/01/2026, 17:06"
+        }
+    ]
+}

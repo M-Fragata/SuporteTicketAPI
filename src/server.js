@@ -1,11 +1,15 @@
 import http from "node:http"
+import { jsonHandler } from "./middlewares/jsonHandler.js"
+import { routeHandler } from "./middlewares/routeHandler.js"
 
 const PORT = 3333
 
-const server = http.createServer((req, res) => {
-    
-})
+async function listener(req, res) {
 
-server.listen(PORT, () => {
-    console.log("Servidor rodando!")
-})
+    await jsonHandler(req, res)
+
+    routeHandler(req, res)
+
+}
+
+http.createServer(listener).listen(PORT)
