@@ -8,7 +8,7 @@ export function createTicketsController(req, res, database) {
         equipment,
         description,
         user_name,
-        status: "closed",
+        status: "open",
         created_at: new Date().toLocaleString("pt-br", {
             day: "2-digit",
             month: "2-digit",
