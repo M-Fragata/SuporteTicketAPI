@@ -79,17 +79,16 @@ export class Database {
 
     delete(table, id) {
 
-
         const ticketIndex = this.#database[table].findIndex((ticket) => {
             if (ticket.id === id) {
                 return ticket
             }
         })
 
-        this.#database[table].splice(ticketIndex, 1)
-        this.#persist()
-
-        return ticketIndex
+        if (ticketIndex > -1) {
+            this.#database[table].splice(ticketIndex, 1)
+            this.#persist()
+        }
 
     }
 
