@@ -20,7 +20,7 @@ export class Database {
     }
 
     insert(table, data) {
-        if(Array.isArray(this.#database[table])) {
+        if (Array.isArray(this.#database[table])) {
             this.#database[table].push(data)
         } else {
             this.#database[table] = [data]
@@ -29,10 +29,18 @@ export class Database {
         this.#persist()
     }
 
-    select(table) {
+    select(table, filters) {
         let data = this.#database[table] ?? []
 
-        return data
+        let filter = filters ? data = data.filter((row) => {
+            return Object.entries(filters).some(([key, value]) => {
+                return row[key].toLowerCase().includes(value.toLowerCase())
+            })
+
+
+        }) : () => { return data }
+
+        return filter
     }
 
 }

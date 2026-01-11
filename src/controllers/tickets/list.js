@@ -1,6 +1,11 @@
 export function listTicketsController(req, res, database) {
-    const ticketsList = database.select("tickets")
 
+
+    const { status } = req.query
+
+    const filters = status ? { status } : null
+    
+    const ticketsList = database.select("tickets", filters)
     return (
         res
             .writeHead(200)
